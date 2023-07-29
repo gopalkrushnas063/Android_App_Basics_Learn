@@ -9,12 +9,24 @@
     android:padding="15dp"
     android:orientation="vertical">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/ic_launcher_background"
-        android:contentDescription="@string/about" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher_background"
+            android:contentDescription="@string/about" />
+
+        <ImageView
+            android:layout_width="208dp"
+            android:layout_height="187dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_android_black_24dp" />
+
+    </RelativeLayout>
+
 
     <TextView
         android:layout_width="match_parent"
@@ -26,16 +38,18 @@
 
     <EditText
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:background="@drawable/edit_text_border"
         android:ems="12"
         android:inputType="text"
+        android:paddingLeft="10dp"
         android:layout_marginTop="25dp"
         android:hint="Enter your name"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:text="Contact Us"/>
 
 </LinearLayout>
