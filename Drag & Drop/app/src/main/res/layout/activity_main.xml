@@ -22,8 +22,10 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:text=" If you received a warning or error stating that &quot;Insufficient image color contrast ratio&quot; for imageView2 in your development environment, it means that the contrast ratio between the foreground and background colors of the image is not meeting the minimum accessibility standards. This warning is often raised to ensure that the content remains readable and usable for all users, including those with visual impairments."
         android:textSize="16sp"
+        android:justificationMode="inter_word"
         android:textStyle="bold" />
 
     <EditText
