@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Drag And Drop</string>
     <string name="img_des">Image Description</string>
+    <string name="desc">If you received a warning or error stating that \"Insufficient image color contrast ratio\" for imageView2 in your development environment, it means that the contrast ratio between the foreground and background colors of the image is not meeting the minimum accessibility standards. This warning is often raised to ensure that the content remains readable and usable for all users.</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="button">Button</string>
 </resources>
