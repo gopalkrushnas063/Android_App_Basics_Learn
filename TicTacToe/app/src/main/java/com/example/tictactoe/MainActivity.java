@@ -94,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
                     newGame();
                 } else if (count == 9){
                     Toast.makeText(this,"Game Is Drawn",Toast.LENGTH_SHORT).show();
+                    newGame();
                 }
             }
         }
