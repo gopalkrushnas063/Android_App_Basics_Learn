@@ -57,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
                 b9 = btn9.getText().toString();
 
                 //conditions
-
                 if (b1.equals(b2) && b2.equals(b3) && !b1.equals("")) {
                     //1
                     Toast.makeText(this, "Winner is : " + b1, Toast.LENGTH_SHORT).show();
