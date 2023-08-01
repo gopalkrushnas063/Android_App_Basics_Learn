@@ -1,4 +1,3 @@
-<!-- activity_main.xml -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -7,46 +6,59 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         android:text="Gopal_Tech"
-        android:textSize="24sp"
-        android:layout_centerInParent="true" />
+        android:textSize="24sp" />
 
-    <Button
-        android:id="@+id/btnTranslate"
+    <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Translate"
-        android:layout_below="@id/textView"
-        android:layout_marginTop="16dp" />
+        android:columnCount="2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
 
-    <Button
-        android:id="@+id/btnAlpha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Alpha"
-        android:layout_toRightOf="@id/btnTranslate"
-        android:layout_below="@id/textView"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp" />
+        <Button
+            android:id="@+id/btnTranslate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:ems="10"
+            android:layout_marginTop="16dp"
+            android:text="Translate" />
 
-    <Button
-        android:id="@+id/btnRotate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Rotate"
-        android:layout_toRightOf="@id/btnAlpha"
-        android:layout_below="@id/textView"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp" />
+        <Button
+            android:id="@+id/btnAlpha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:ems="10"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/btnTranslate"
+            android:text="Alpha" />
 
-    <Button
-        android:id="@+id/btnScale"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Scale"
-        android:layout_toRightOf="@id/btnRotate"
-        android:layout_below="@id/textView"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp" />
+        <Button
+            android:id="@+id/btnRotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:layout_toRightOf="@id/btnAlpha"
+            android:text="Rotate" />
+
+        <Button
+            android:id="@+id/btnScale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:layout_toRightOf="@id/btnRotate"
+            android:text="Scale" />
+
+    </GridLayout>
+
 
 </RelativeLayout>

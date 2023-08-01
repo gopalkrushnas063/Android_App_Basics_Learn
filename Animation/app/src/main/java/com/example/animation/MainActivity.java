@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnScale.setOnClickListener(this);
     }
 
+
     @Override
     public void onClick(View view) {
         int viewId = view.getId();
