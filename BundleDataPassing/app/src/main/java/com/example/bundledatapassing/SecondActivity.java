@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Toolbar;
 
 public class SecondActivity extends AppCompatActivity {
 
@@ -22,6 +23,6 @@ public class SecondActivity extends AppCompatActivity {
         txtStudentInfo = findViewById(R.id.txtStudentInfo);
 
         txtStudentInfo.setText("Roll No : "+RollNo+", Name : "+StudentName);
-        getSupportActionBar().setTitle(title);
+//        getSupportActionBar().setTitle(title);
     }
 }
