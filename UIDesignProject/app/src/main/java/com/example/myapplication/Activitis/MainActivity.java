@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<Hourly> items = new ArrayList<>();
 
         items.add(new Hourly("9 pm",24,"cloudy"));
-        items.add(new Hourly("11 pm",29,"sun"));
+        items.add(new Hourly("11 pm",29,"sunny"));
         items.add(new Hourly("12 pm",30,"wind"));
         items.add(new Hourly("1 am",26,"rainy"));
         items.add(new Hourly("2 am",24,"storm"));
