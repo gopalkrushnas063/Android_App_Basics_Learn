@@ -1,5 +1,6 @@
 package com.example.myapplication.Adapters;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -34,12 +35,14 @@ public class FutureAdapters extends RecyclerView.Adapter<FutureAdapters.viewHold
         return new viewHolder(inflate);
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     public void onBindViewHolder(@NonNull FutureAdapters.viewHolder holder, int position) {
         holder.dayTxt.setText(items.get(position).getDay());
         holder.statusTxt.setText(items.get(position).getStatus());
-        holder.lowTxt.setText(items.get(position).getLowTemp()+"");
-        holder.highTxt.setText(items.get(position).getHighTemp());
+        holder.highTxt.setText(items.get(position).getHighTemp()+"°");
+        holder.lowTxt.setText(items.get(position).getLowTemp()+".");
+
 
         int drawableResourceId = holder.itemView.getResources()
                 .getIdentifier(items.get(position).getPicPath(),"drawable",holder.itemView.getContext().getPackageName());
