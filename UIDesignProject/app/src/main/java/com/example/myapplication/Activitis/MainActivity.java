@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 import com.example.myapplication.Adapters.HourlyAdapters;
 import com.example.myapplication.Domains.Hourly;
@@ -22,6 +25,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         initRecyclerview();
+        setVariable();
+    }
+
+    private void setVariable() {
+        TextView next7DayBtn = findViewById(R.id.nextBtn);
+        next7DayBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,FutureActivity.class));
+            }
+        });
     }
 
     private void initRecyclerview() {
