@@ -28,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
         //step 2
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setTitle("My Toolbar");
         }
 
-        toolbar.setTitle("My Toolbar");
         toolbar.setSubtitle("Sub Title");
     }
 
