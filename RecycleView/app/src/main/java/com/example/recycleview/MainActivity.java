@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
                         }
 
 
-                        arrContacts.add(new ContactModel(name,number));
+                        arrContacts.add(new ContactModel(R.drawable.user,name,number));
                         adapter.notifyItemInserted(arrContacts.size()-1);
 
                         recyclerView.scrollToPosition(arrContacts.size()-1);

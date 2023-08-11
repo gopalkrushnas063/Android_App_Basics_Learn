@@ -24,6 +24,7 @@
         android:layout_height="wrap_content"
         android:background="#FFF"
         android:hint="Enter Name"
+        android:textColor="@color/black"
         android:inputType="text"
         android:padding="11dp" />
 
@@ -34,6 +35,7 @@
         android:layout_marginTop="10dp"
         android:background="#FFF"
         android:hint="Enter Number"
+        android:textColor="@color/black"
         android:inputType="number"
         android:padding="11dp" />
 
