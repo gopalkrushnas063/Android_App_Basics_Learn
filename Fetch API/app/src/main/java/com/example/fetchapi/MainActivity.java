@@ -12,6 +12,8 @@ import org.json.JSONException;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+
+    Toolbar toolbar;
     private RecyclerView recyclerView;
     private ProductAdapter productAdapter;
     private ApiService apiService;
