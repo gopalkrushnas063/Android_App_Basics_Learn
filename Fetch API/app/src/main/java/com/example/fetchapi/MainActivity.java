@@ -3,6 +3,7 @@ package com.example.fetchapi;
 import android.os.Bundle;
 import android.widget.Toolbar;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -13,7 +14,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    Toolbar toolbar;
+
     private RecyclerView recyclerView;
     private ProductAdapter productAdapter;
     private ApiService apiService;
@@ -23,7 +24,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //step 1
+        androidx.appcompat.widget.Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
+
+        //step 2
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setTitle("My Products");
+        }
         
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -33,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         apiService = new ApiService(this);
         fetchData();
     }
+
 
     private void fetchData() {
         apiService.fetchProducts(

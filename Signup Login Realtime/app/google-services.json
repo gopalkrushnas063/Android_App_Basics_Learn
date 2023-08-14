@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "115721884119",
+    "project_id": "signup-login-realtime-80228",
+    "storage_bucket": "signup-login-realtime-80228.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:115721884119:android:b268509ac04591c575bb92",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "115721884119-f5rgc0q14a4q5ns09j88rt671cu35cfn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD74xDFY-8Zgbxwa0MjXsCBb70rrmABR_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "115721884119-f5rgc0q14a4q5ns09j88rt671cu35cfn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

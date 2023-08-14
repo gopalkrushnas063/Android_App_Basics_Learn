@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "project_number": "606073801056",
+    "project_id": "real-time-db-crud-6d1c7",
+    "storage_bucket": "real-time-db-crud-6d1c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606073801056:android:dc0ba0b0323c48ac78b605",
+        "android_client_info": {
+          "package_name": "com.codingwithzo.realtimedbaddreadupdatedelete"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "606073801056-ro64uuql0bb0j8aerrvl22suv28kv7s3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ-F6lC7mGTIzBaSTYVTCzgaMV9SzMmDI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "606073801056-ro64uuql0bb0j8aerrvl22suv28kv7s3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606073801056:android:97956f3ec2ebd5af78b605",
+        "android_client_info": {
+          "package_name": "com.example.firebasecrud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "606073801056-ro64uuql0bb0j8aerrvl22suv28kv7s3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ-F6lC7mGTIzBaSTYVTCzgaMV9SzMmDI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "606073801056-ro64uuql0bb0j8aerrvl22suv28kv7s3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606073801056:android:364c1aa89d9ae51778b605",
+        "android_client_info": {
+          "package_name": "com.example.firebasecrudapp1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "606073801056-ro64uuql0bb0j8aerrvl22suv28kv7s3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ-F6lC7mGTIzBaSTYVTCzgaMV9SzMmDI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "606073801056-ro64uuql0bb0j8aerrvl22suv28kv7s3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

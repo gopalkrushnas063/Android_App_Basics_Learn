@@ -65,7 +65,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         public void bind(Product product) {
             // Bind data to UI components here
             titleTextView.setText(product.getTitle());
-            priceTextView.setText(String.valueOf(product.getPrice()));
+            priceTextView.setText("$ " + String.valueOf(product.getPrice())+" /-");
             descriptionTextView.setText(product.getDescription());
             categoryTextView.setText(product.getCategory());
             ratingBar.setRating((float) product.getRating());
