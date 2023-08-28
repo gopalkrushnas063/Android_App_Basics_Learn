@@ -16,7 +16,7 @@ import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
 
-    private EditText name,job;
+    private EditText adminName,email,mobile,password;
     private Button btnSubmit;
 
     @Override
@@ -24,8 +24,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        name = findViewById(R.id.name);
-        job = findViewById(R.id.job);
+        adminName = findViewById(R.id.adminName);
+        email = findViewById(R.id.email);
+        mobile = findViewById(R.id.mobile);
+        password = findViewById(R.id.password);
         btnSubmit = findViewById(R.id.btnSubmit);
 
         btnSubmit.setOnClickListener(new View.OnClickListener() {
@@ -38,19 +40,21 @@ public class MainActivity extends AppCompatActivity {
 
     private void btnSendPostReqCheck() {
 
-        String edName = name.getText().toString();
-        String edJob = job.getText().toString();
+        String adName = adminName.getText().toString();
+        String mob = mobile.getText().toString();
+        String em = email.getText().toString();
+        String pwd = password.getText().toString();
 
         ApiInterface apiInterface = RetrofitClient.getRetrofitInstance().create(ApiInterface.class);
-        Call<User> call = apiInterface.getUserInformation(edName,edJob);
+        Call<User> call = apiInterface.getUserInformation(adName,em,mob,pwd);
         call.enqueue(new Callback<User>() {
             @Override
             public void onResponse(Call<User> call, Response<User> response) {
                 Log.e(TAG, "onResponse: code "+response.code() );
-                Log.e(TAG, "onResponse: name "+response.body().getName() );
-                Log.e(TAG, "onResponse: job "+response.body().getJob() );
-                Log.e(TAG, "onResponse: id "+response.body().getId() );
-                Log.e(TAG, "onResponse: createdAt "+response.body().getCreatedAt() );
+                Log.e(TAG, "onResponse: admin name "+response.body().getAdminName() );
+                Log.e(TAG, "onResponse: email "+response.body().getEmail() );
+                Log.e(TAG, "onResponse: mobile "+response.body().getMobile() );
+                Log.e(TAG, "onResponse: password "+response.body().getPassword() );
             }
 
             @Override

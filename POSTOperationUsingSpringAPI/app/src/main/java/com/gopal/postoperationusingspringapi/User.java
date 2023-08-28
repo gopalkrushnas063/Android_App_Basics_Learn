@@ -1,47 +1,50 @@
 package com.gopal.postoperationusingspringapi;
 
 public class User {
-   private String name;
-   private String job;
-   private String id;
-   private String createdAt;
+   private String adminName;
+   private String email;
+   private String mobile;
+   private String password;
 
-    public User(String name, String job, String id, String createdAt) {
-        this.name = name;
-        this.job = job;
-        this.id = id;
-        this.createdAt = createdAt;
+    public User() {
     }
 
-    public String getName() {
-        return name;
+    public User(String adminName, String email, String mobile, String password) {
+        this.adminName = adminName;
+        this.email = email;
+        this.mobile = mobile;
+        this.password = password;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getAdminName() {
+        return adminName;
     }
 
-    public String getJob() {
-        return job;
+    public void setAdminName(String adminName) {
+        this.adminName = adminName;
     }
 
-    public void setJob(String job) {
-        this.job = job;
+    public String getEmail() {
+        return email;
     }
 
-    public String getId() {
-        return id;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public String getMobile() {
+        return mobile;
     }
 
-    public String getCreatedAt() {
-        return createdAt;
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
     }
 
-    public void setCreatedAt(String createdAt) {
-        this.createdAt = createdAt;
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
