@@ -16,11 +16,9 @@ import java.util.ArrayList;
 
 public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductViewHolder> {
     private final ArrayList<Product> products;
-
     public ProductAdapter(ArrayList<Product> products) {
         this.products = products;
     }
-
     public void setProducts(ArrayList<Product> products) {
         this.products.clear();
         this.products.addAll(products);
